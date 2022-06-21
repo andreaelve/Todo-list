@@ -1,0 +1,132 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  border: none;
+}
+
+.main {
+  display: grid;
+  align-content: stretch;
+  justify-items: center;
+  grid-template-rows: 6em 16em auto;
+  min-height: 100vh;
+  background: linear-gradient(0deg, rgba(24,40,72,1) 0%, rgba(45,84,160,1) 100%);
+} 
+
+.main_heading {
+  font-size: 2em;
+  padding-top: 1em;
+}
+
+.form_heading {
+  padding-bottom: 0.5em;
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+.form_input {
+  background-color: #1F396D;
+  margin: 0.3em 0;
+  padding: 0.3em;
+  height: 2.5em;
+  font-size: 1em;
+  border-radius: 0.2em;
+}
+
+.form_input:focus {
+  outline: none;
+}
+
+.form_btn {
+  width: 3em;
+  background-color: #FF8C61;
+  margin-top: 0.3em;
+  font-size: 1em;
+  border-radius: 0.2em;
+  height: 2em;
+  box-shadow: 0 0 10px 4px rgba(255, 139, 97, 0.25);
+}
+
+.card_btn-remove {
+  width: 5em;
+  background-color: #FF5252;
+  height: 2em;
+  font-size: 1em;
+  border-radius: 0.2em;
+  box-shadow: 0 0 10px 4px rgba(255, 82, 82, 0.25);
+} 
+
+.main_heading,
+.card,
+.form_input,
+.form_btn,
+.card_btn-remove {
+  color: #fff;
+}
+
+.card {
+  display: grid;
+  background-color: rgba(255, 255, 255, 0.17);
+  margin: 1em;
+  padding: 1.5em 1.5em;
+  border-radius: 1em;
+  width: 90%;
+  max-width: 600px;
+  height: 14em;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card_heading {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+
+.card_description {
+  font-size: 1.2em;
+  font-weight: lighter;
+}
+
+.card_status,
+.card_status-done {
+  font-size: 0.8em;
+  font-weight: lighter;
+  color: #fff;
+}
+
+.card_status::before,
+.card_status-done::before {
+  content: '';
+  border: 2px solid #FF8C61;
+  padding: 0 0.6em;
+  margin-right: 0.5em;
+  border-radius: 1em;
+  box-shadow: 0 0 5px 5px rgb(255 139 97 / 25%);
+}
+
+.card_status-done::before {
+  background-color: #FF8C61;
+}
+
+.form_bottom {
+  display: grid;
+  justify-content: end;
+}
+
+.card_bottom {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.done {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.section {
+  display: grid;
+  justify-items: center;
+  width: 100%;
+}
