@@ -62,7 +62,8 @@
 .card,
 .form_input,
 .form_btn,
-.card_btn-remove {
+.card_btn-remove,
+.section_heading {
   color: #fff;
 }
 
@@ -127,6 +128,12 @@
 
 .section {
   display: grid;
+  grid-template-rows: 1.5em auto;
   justify-items: center;
   width: 100%;
+  margin-top: 1.5em;
+}
+
+.section_heading {
+  font-size: 1.7em;
 }

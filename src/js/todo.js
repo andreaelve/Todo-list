@@ -31,7 +31,7 @@ const removeTodo = (el) => {
 };
 
 const renderList = () => {
-  todoContainer.innerHTML = '';
+  todoContainer.innerHTML = '<h2 class="section_heading">Your Todos</h2>';
   const sortedList = [
     ...todoList.filter((e) => e.status !== 'done'),
     ...todoList.filter((e) => e.status === 'done'),
